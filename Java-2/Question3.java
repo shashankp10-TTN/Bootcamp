@@ -4,10 +4,6 @@
 */
 
 import java.io.*;
-import java.net.FileNameMap;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
 
 public class Question3 {
     public static void main(String[] args) {
