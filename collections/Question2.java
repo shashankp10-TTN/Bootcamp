@@ -6,6 +6,7 @@
         Also, Write a program to sort Employee objects based on salary using Comparator.
  */
 
+// Yet to complete have to study comparator properly
 class Employee {
     private Double age;
     private Double salary;

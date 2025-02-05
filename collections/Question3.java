@@ -62,7 +62,7 @@ class SpecialStack {
             minSoFar = arr[index-1].getSecond();
     }
 
-    // not mentioned in the assignment but it's an important method on stack
+    // not mentioned in the assignment but it's an important method in stack
     public int top() {
         if(index==0)
             throw new IllegalStateException("Stack is empty!!");
