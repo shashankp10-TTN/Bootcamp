@@ -15,9 +15,11 @@ class Singleton {
         System.out.println("Dummy method called using singleton instance!!");
     }
 }
+
 public class Question5 {
     public static void main(String[] args) {
         Singleton instance = Singleton.getInstance();
         instance.dummyMethod();
+
     }
 }
