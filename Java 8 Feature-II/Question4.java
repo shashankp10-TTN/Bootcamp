@@ -32,8 +32,25 @@ public class Question4 {
     public static void main(String[] args) {
         // Without optional class
         User user1 = new User(null,"password");
-        System.out.println(user1.getEmail().contains("@")); // this will throw null pointer exception
+        System.out.println(user1.getEmail().contains("@"));
 
-        // With optional class -> I will read and solve it later
+        // With optional class
+        Optional<String> emailOptional = Optional.ofNullable(user1.getEmail());
+        Optional<String> passwordOptional = Optional.ofNullable(user1.getPassword());
+
+        System.out.println(Optional.of(emailOptional));
+
+        System.out.println(emailOptional.orElse("Email is null"));
+
+        if(emailOptional.isPresent() && passwordOptional.isPresent()){
+            if(emailOptional.get().equals("shashank@tothenew.com") && passwordOptional.get().equals("password")){
+                System.out.println("Login successfully");
+            }else {
+                System.out.println("Email or password is incorrect");
+            }
+        }else{
+            System.out.println("Email or password is null");
+        }
+
     }
 }
