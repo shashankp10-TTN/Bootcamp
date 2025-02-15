@@ -1,5 +1,8 @@
-import java.util.Objects;
-
+/*
+    Q1. Create a Record for the Student with the following Fields: id name standard
+    Q2. Make sure that no null values should be used for initialization.
+    Q3. Use equal and hashCode methods with Student records
+ */
 public class Question1To3 {
     public static void main(String[] args) {
 
@@ -15,5 +18,7 @@ public class Question1To3 {
         System.out.println(s1.hashCode() == s2.hashCode());
         System.out.println(s1.hashCode());
         System.out.println(s2.hashCode());   // equals() and hashCode() methods are overridden by default
+
     }
+
 }
