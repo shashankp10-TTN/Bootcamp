@@ -51,6 +51,6 @@ public class App {
                       <scope>test</scope>
                   </dependency>
         4. provided using different dependencies being defined in your pom.xml
-            When I want certain dependency to be there in the development face only not in my build file
+            When I want certain dependency to be there in the development phase only not in my build file
 
  */
