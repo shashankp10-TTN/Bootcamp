@@ -17,7 +17,9 @@ public class SpringbootAssignmentApplication {
 			- refer application.properties and controller class
 		Q3. Create a Employee table (id, name, designation) under H2 database and inserts few sample records under that table at startup.
 			- refer service and entity folder
-			- adding employees using @RequestBody, taking input from postman
+			- adding employees using @RequestBody, taking input from postman [Method-1]
+			- adding employees using @PostConstruct and adding hard-coded data [Method-2]
+			- adding employees using @PostConstruct and adding data using file
 		Q4. Enable actuator services and play around few endpoints it exposes.
 		Q5. Enable devtools and play around by making changes.
 			- refer pom.xml where I have added the required dependencies and tried playing with different api exposed by actuator

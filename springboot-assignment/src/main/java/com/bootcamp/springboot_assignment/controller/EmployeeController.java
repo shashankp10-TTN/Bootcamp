@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 public class EmployeeController {
 
@@ -24,10 +26,16 @@ public class EmployeeController {
     @Value("${com.bootcamp.springboot-assignment.message}")
     private String message;
 
-    @PostMapping("/addUser")
-    public ResponseEntity<String> addUser(@RequestBody Employee employee) {
+    @PostMapping("/addEmployee")
+    public ResponseEntity<String> addEmployee(@RequestBody Employee employee) {
         employeeService.addEmployee(employee);
         String welcomeMessage = String.format("%s %s %s", salutation, employee.getEmployeeName(), message);
         return new ResponseEntity<>(welcomeMessage, HttpStatus.OK);
+    }
+
+    @GetMapping("/getAll")
+    public ResponseEntity<List<Employee>> getAllEmployees() {
+        List<Employee> employeeList = employeeService.getAllEmployee();
+        return new ResponseEntity<>(employeeList, HttpStatus.OK);
     }
 }
