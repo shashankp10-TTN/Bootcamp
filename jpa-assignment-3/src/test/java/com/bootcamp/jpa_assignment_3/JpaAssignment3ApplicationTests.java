@@ -26,7 +26,7 @@ class JpaAssignment3ApplicationTests {
 		author.setName("Shashank");
 
 		Address address = new Address();
-		address.setStreetNumber("07");
+		address.setStreetName("07");
 		address.setLocation("Govindpuri");
 		address.setState("Delhi");
 		author.setAddress(address);
@@ -41,7 +41,7 @@ class JpaAssignment3ApplicationTests {
 		author.setName("Shashank");
 
 		Address address = new Address();
-		address.setStreetNumber("07");
+		address.setStreetName("07");
 		address.setLocation("Govindpuri");
 		address.setState("Delhi");
 		author.setAddress(address);
@@ -62,7 +62,7 @@ class JpaAssignment3ApplicationTests {
 		author.setName("Shashank");
 
 		Address address = new Address();
-		address.setStreetNumber("07");
+		address.setStreetName("07");
 		address.setLocation("Govindpuri");
 		address.setState("Delhi");
 		author.setAddress(address);
@@ -89,7 +89,7 @@ class JpaAssignment3ApplicationTests {
 		author.setName("Shashank");
 
 		Address address = new Address();
-		address.setStreetNumber("07");
+		address.setStreetName("07");
 		address.setLocation("Govindpuri");
 		address.setState("Delhi");
 		author.setAddress(address);

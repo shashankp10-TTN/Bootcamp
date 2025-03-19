@@ -18,6 +18,7 @@ public class Author {
     @Embedded
     private Address address;
 
+    @ElementCollection
     private List<String> subjects;
 //    @OneToOne(mappedBy = "author", cascade = CascadeType.ALL)
 //      private Book book;
